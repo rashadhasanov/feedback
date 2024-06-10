@@ -16,7 +16,11 @@ emojiContainer.addEventListener("click", (e) => {
 });
 
 sendFeedback.addEventListener("click", () => {
-  feedbackContainer.classList.add("hidden");
-  feedbackMessage.classList.remove("hidden");
-  feedbackSmile.textContent = `Feddback:${selectedRating.textContent}`;
+  if (selectedRating) {
+    feedbackContainer.classList.add("hidden");
+    feedbackMessage.classList.remove("hidden");
+    feedbackSmile.textContent = `Feddback:${selectedRating.textContent}`;
+  } else {
+    return;
+  }
 });
