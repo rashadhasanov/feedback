@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.container .raiting img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.container .raiting {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container .emoji-container {
+  display: flex;
+  gap: 50px;
+}
+
+.container button {
+  border: none;
+  padding: 10px;
+  background-color: bisque;
+  cursor: pointer;
+}
+
+.feedback {
+  background-color: aqua;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.hidden {
+  display: none;
+}
