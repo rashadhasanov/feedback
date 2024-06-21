@@ -19,8 +19,6 @@ sendFeedback.addEventListener("click", () => {
   if (selectedRating) {
     feedbackContainer.classList.add("hidden");
     feedbackMessage.classList.remove("hidden");
-    feedbackSmile.textContent = `Feddback:${selectedRating.textContent}`;
-  } else {
-    return;
+    feedbackSmile.textContent = `Feedback:${selectedRating.textContent}`;
   }
 });
